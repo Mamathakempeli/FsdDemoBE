@@ -15,3 +15,13 @@ Backend application is restful api built with Node.js and Express.js, and it use
  - 'PORT' : Port number
 
  4. Run `npm run dev` to start the server
+
+## libraries used:
+- mongoose: mongodb object modeling tool.It is used to interact with mongodb database.
+we use this instead of mongodb driver because it provides a simple schema-based solution to model our application
+
+npm i mongoose
+
+
+- .env: to store sensitive info like password URL, port numbers
+npm i dotenv
