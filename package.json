@@ -1,0 +1,19 @@
+{
+  "name": "fsddemo",
+  "version": "1.0.0",
+  "description": "Backend application with Nodejs, expressjs, mongodb database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mamathakempeli/FsdDemoBE.git"
+  },
+  "author": "Mamatha kempeli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mamathakempeli/FsdDemoBE/issues"
+  },
+  "homepage": "https://github.com/Mamathakempeli/FsdDemoBE#readme"
+}
