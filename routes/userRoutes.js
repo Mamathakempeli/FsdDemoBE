@@ -1,12 +1,20 @@
 // import the express router
 const express= require('express');
-const userRoutes= express.Router();
+const userRouter= express.Router();
 const userController= require('../controllers/userController')
+const auth = require('../middleware/auth');
+
 
 //define the endpoints
-userRoutes.post('/register',userController.register);
-userRoutes.post('/login',userController.login)
+userRouter.post('/register',userController.register);
+userRouter.post('/login',userController.login);
 
+//authorized end points
+userRouter.get('/profile',auth.verifyToken,userController.getUser); //goto getUser only if authtoken verified
+userRouter.put('/profile', auth.verifyToken, userController.updateUser);
+userRouter.delete('/profile', auth.verifyToken, userController.deleteUser);
+
+userRouter.get('/logout', auth.verifyToken, userController.logout);
 
 //export the userRouter
-module.exports=userRoutes;
+module.exports=userRouter;
