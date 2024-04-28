@@ -23,23 +23,23 @@ Job Portal System
  - [x] User login
 
 - [] Admin Dashboard
-  - [] Add a Company
-  - [] Update a Company
-  - [] Delete a Company
-  - [] View a Company
-  - [] View All Companies
-  - [] Add Job
-  - [] Update Job
-  - [] Delete Job
-  - [] View Job
-  - [] View All Jobs
-  - [] View All Users
+  - [x] Add a Company
+  - [x] Update a Company
+  - [x] Delete a Company
+  - [x] View a Company
+  - [x] View All Companies
+  - [x] Add Job
+  - [x] Update Job
+  - [x] Delete Job
+  - [x] View Job
+  - [x] View All Jobs
+  - [x] View All Users
 
 - [] User Dashboard
-  - [] View Job
-  - [] View All Jobs
-  - [] Apply Job
-  - [] View Applied Jobs
+  - [x] View Job
+  - [x] View All Jobs
+  - [x] Apply Job
+  - [x] View Applied Jobs
   - [x] View Profile
   - [x] Update Profile
   - [x] Delete Profile
