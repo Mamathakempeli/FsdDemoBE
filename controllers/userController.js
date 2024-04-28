@@ -166,15 +166,15 @@ deleteUser: async (request, response) => {
        const userId = request.userId;
 
        // find the user by id from the database
-       const user = await User.findById(userId);
+       const user = await User.findByIdAndDelete(userId);
 
-       // if the user does not exist, return an error
-       if (!user) {
-           return response.status(404).json({ message: 'User not found' });
-       }
+    //    // if the user does not exist, return an error
+    //    if (!user) {
+    //        return response.status(404).json({ message: 'User not found' });
+    //    }
 
-       // delete the user if the user exists
-       await user.remove();
+    //    // delete the user if the user exists
+    //    await user.remove();
 
        // return a success message
        response.json({ message: 'User deleted successfully' });

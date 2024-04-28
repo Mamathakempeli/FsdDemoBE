@@ -12,6 +12,8 @@ const morgan = require('morgan')  //to log requests to the console
 
 //import the user routes
 const userRouter = require('./routes/userRoutes');
+const jobRouter = require('./routes/jobRoutes');
+const companyRouter = require('./routes/companyRoutes');
 
 //create an express application
 const app = express();
@@ -40,6 +42,9 @@ app.use(express.json());
 // })
 
 app.use('/api/users',userRouter);
+app.use('/api/companies', companyRouter);
+app.use('/api/jobs', jobRouter);
+
 
 //export app module
 module.exports=app;
